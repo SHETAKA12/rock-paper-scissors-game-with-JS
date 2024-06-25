@@ -8,5 +8,18 @@ let userChoice
 choices.forEach(choice => choice.addEventListener('click', (e) => {
     userChoice = e.target.id
     displayUser.textContent = userChoice
-    // generateComputerChoice()
+    generateComputerChoice()
 }))
+
+function generateComputerChoice() {
+    let computerChoice = Math.floor(Math.random() * 3)
+    if (computerChoice === 0) {
+        computerChoice = "rock"
+    } else if (computerChoice === 1) {
+        computerChoice = "paper"
+    } else {
+        computerChoice = "scissors"
+    }
+    displayComputer.textContent = computerChoice
+    
+}
