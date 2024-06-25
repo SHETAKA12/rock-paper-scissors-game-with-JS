@@ -1,0 +1,33 @@
+body{
+    background: #17212b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex row;
+
+}
+
+h1{
+    font-size: 41px;
+}
+
+button{
+    font-size: 40px;
+    background: none;
+    border: 2px white dotted;
+    border-radius: 100%;
+    padding: 5px;
+    margin: 20px;
+}
+
+#result{
+    color: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+}

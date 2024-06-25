@@ -7,24 +7,36 @@ let userChoice
 let computerChoice
 let result
 choices.forEach(choice => choice.addEventListener('click', (e) => {
+    let displayed
     userChoice = e.target.id
-    displayUser.textContent = userChoice
+    if (userChoice === "Rock"){
+        displayed = "✊"
+    }
+    if (userChoice === "Paper"){
+        displayed = "✋"
+    }
+    if (userChoice === "Scissors"){
+        displayed = "✌️"
+    }
+    displayUser.textContent = displayed
     generateComputerChoice()
-    console.log(result)
     getResult()
 }))
 
 function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3)
-    
+    let displayed
     if (randomNumber === 0) {
         computerChoice = "Rock"
+        displayed = "✊"
     } else if (randomNumber === 1) {
         computerChoice = "Paper"
+        displayed = "✋"
     } else {
         computerChoice = "Scissors"
+        displayed = "✌️"
     }
-    displayComputer.textContent = computerChoice
+    displayComputer.textContent = displayed
    
     
 }
