@@ -18,11 +18,11 @@ function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3)
     
     if (randomNumber === 0) {
-        computerChoice = "rock"
+        computerChoice = "Rock"
     } else if (randomNumber === 1) {
-        computerChoice = "paper"
+        computerChoice = "Paper"
     } else {
-        computerChoice = "scissors"
+        computerChoice = "Scissors"
     }
     displayComputer.textContent = computerChoice
    
